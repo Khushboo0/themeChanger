@@ -1,0 +1,111 @@
+/* Reset Default Browser Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Light Theme */
+.light {
+  background-color: #f0f2f5; /* Light gray background */
+  color: #333333; /* Dark text */
+}
+
+/* Dark Theme */
+.dark {
+  background-color: #121212; /* Dark background */
+  color: #e4e4e4; /* Light text */
+}
+
+/* Main Container */
+.App {
+  background-color: inherit; /* Matches the theme */
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 90%;
+}
+
+/* Header */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+/* Paragraph */
+p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Theme Toggle Button */
+.theme-toggle-btn {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.theme-toggle-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+.theme-toggle-btn:active {
+  background-color: #004085;
+  transform: translateY(1px);
+}
+
+/* Footer Styling */
+footer {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+/* Light Theme for Body */
+body.light {
+  background-color: #f0f2f5; /* Light gray */
+  color: #333333; /* Dark text */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Theme for Body */
+body.dark {
+  background-color: #121212; /* Dark gray/black */
+  color: #e4e4e4; /* Light text */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .theme-toggle-btn {
+    font-size: 0.9rem;
+    padding: 0.7rem 1rem;
+  }
+}
